@@ -1,0 +1,546 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: #0f0f0f;
+    display: grid;
+    grid-template-columns: 4fr  8fr;
+    grid-template-rows: 1fr 4fr;
+    overflow-y: scroll;
+}
+.container .navBar{
+    grid-column: span 2; 
+    height: fit-content;
+}
+.wacthContent{
+    
+}
+.mainVideoContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+    padding-right: 100px;
+}
+.video{
+    width: 719px;
+    height: 401px;
+    border-radius: 10px;
+    background-color: black;
+    
+}
+.mainVideoContent h4{
+    color: white;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: auto;
+    text-align: right;
+}
+
+.vedioDetails{
+    width: 719px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subscribe{
+    display: flex;
+    width: 250px;
+    align-items: center;
+    justify-content: space-between;
+}
+.channelDetials{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: white;
+}
+.subscribe img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+}
+.YoutuberDetials h4{
+    font-size: medium;
+}
+.YoutuberDetials{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+
+}
+
+.YoutuberDetials div{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #aaaaaa;
+}
+
+
+
+.subscribeBtn{
+    width: 65px;
+    height: 35px;
+    border-radius: 100px;
+    border: hidden;
+    background-color: #f1f1f1;
+    color: #0f0f0f;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+
+}
+.events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.buttonsLike{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: hidden;
+    background-color: #272827;
+    
+    width: 130px;
+}
+
+.buttonsLike button{
+    background-color: transparent;
+    border: hidden;
+    color: white;
+    font-size: large;
+    width: 50%;
+    outline: none;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.buttonsLike button:hover{
+    background-color:rgba(128, 128, 128, 0.384) ;
+}
+.line{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.up{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    gap: 10px;
+}
+
+.line::before{
+content: "";
+width: 1px;
+border-radius: 50px;
+height: 80%;
+position: absolute;
+right: 0;
+background-color: gray;
+top: 5px;
+}
+.share{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border: hidden;
+    background-color: #272827;
+    width: 100px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    padding: 8px;
+    gap: 10px;
+    transition: 0.5s all;
+
+}
+.more{
+    border-radius: 50%;
+    border: hidden;
+    background-color: #272827;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    transition: 0.5s all;
+}
+.more:hover , .share:hover{
+    background-color:rgba(128, 128, 128, 0.384) ;
+}
+
+.share span{
+    background-color: transparent;
+    border: hidden;
+}
+
+.likesCount{
+width: fit-content;
+height: fit-content;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.description{
+    width: 719px;
+    height: fit-content; 
+    display: flex;
+    flex-direction: column;
+    background-color: #272727;
+    border-radius: 10px;
+}
+.basicInfo{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    padding: 5px;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding-right: 20px;
+
+}
+.basicInfo .veiw{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 3px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.basicInfo .veiw:last-child {
+    font-weight: 600;
+}
+.viewstxt{
+    font-size: small;
+    font-weight: 400;
+}
+.descriptionText{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    text-align: right;
+    display: block;
+
+}
+
+.channelsDetialsDesc{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 10px;
+    padding-right: 20px ;
+    gap: 20px;
+}
+.channelInfo{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.channelInfo img{
+    width: 70px;
+    height: 70px;
+    border-radius:50% ;
+}
+.descriptionButton{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.descriptionButton button{
+    width: 48%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.397);
+    background-color: transparent;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 100px;
+    transition: 0.5s all;
+
+}
+.descriptionButton button:hover{
+    background-color:rgba(128, 128, 128, 0.397) ;
+
+}
+
+.subTextHide{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+.subTextHide p{
+    font-size: small;
+    color:white ; 
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+.comments{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 20px;
+
+}
+.commentFilter{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    gap: 20px;
+}
+.commentFilter div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.commentCount{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+
+.addComment{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 10px;
+    justify-content: flex-end;
+}
+
+.addComment img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.addComment .commentInput{
+    
+    width: 100%;
+}
+
+.addComment .commentInput input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: hidden;
+    border-bottom: 0.5px solid gray;
+    background-color: transparent;
+    color: white;
+}
+
+
+
+
+.addComment .commentInput input:focus {
+    border-bottom: 2px solid snow;
+}
+
+
+
+.addComment .commentInput input::placeholder{
+    text-align: right;
+}
+
+.commentButtons{
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.commentButtons button{
+    background-color: transparent;
+    border: hidden;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    width: 60px;
+    border-radius: 100px;
+    transition: 0.5s all;
+}
+.close:hover{
+    background-color: rgba(97, 97, 97, 0.534) !important;
+}
+.commentSubmit{
+    background-color: #3ea6ff !important;
+    color:#272727  !important
+}
+
+.comment{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.commentContent{
+    text-align: right;
+}
+
+
+.commentContent .commentName{
+    display: flex; 
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 10px;
+    width: 100%;
+    text-align: left;
+    justify-content: flex-end;
+    
+}
+
+.commentUser{
+    font-weight: 700;
+    font-size: 14px;
+}
+.commenttime{
+    font-size: small;
+    color: rgba(255, 255, 255, 0.603);
+}
+.commentMessage{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.commentEvents{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.commentEvents button{
+    background-color: transparent;
+    border: hidden;
+    color: white;
+    cursor: pointer;
+    font-size:18px;
+    
+    padding:5px;
+    border-radius: 100px;
+    transition: 0.5s all;
+}
+.commentEvents button:hover{
+    background-color: #272727;
+}
+
+
+.countIcons{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+
+.comment img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.otherBar {
+    
+}
+.contentBar{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.otherVideo{
+    display: flex;
+    padding :0 ; 
+    margin: 0;
+    
+}
+.otherVideo img{
+    width: 170px;
+    height: 95px;
+}
+.videoImg{
+    height: 90%;
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+.videoData{
+    display: flex;
+    align-items: flex-start;
+    
+    height: fit-content;
+    padding :0 ; 
+    margin: 0;
+}
+
+.videoDetails{
+    height: 100%;
+}
+
+.keywordsBar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
+}
+
+
